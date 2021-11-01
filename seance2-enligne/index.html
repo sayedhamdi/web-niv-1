@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            learning CSS 
+        </title>
+        <style>
+            /*
+                selecteur par tagname - balise
+                    {
+                        propriete:valeur;
+                    }
+            */
+            /*
+                html <-- css in html
+                    body
+                        ... <-- lel les elements
+            */
+            /*
+               racine->html-
+                        head
+                        body
+                            h1
+                            p
+                            div
+                                p
+                                img
+                                h2
+            */
+           /*global styles*/
+            /* typography  */
+            :root{
+            
+                font-size:18px;
+                --text-blue:#0000fa;
+                --big-text:36px;
+                --author-text:14px;
+            
+            }
+
+            /*
+                default behaviors of browsers
+                chaque nav definit du code css sur chaque element
+             */
+            /* pixel perfect */
+
+            /*
+                css reset 
+                    les typographies 
+                    les margins 
+                    les paddings 
+                    (les elements a 0)
+            */
+            /*selecteur pour tout element*/
+
+            /*
+                flexbox
+                grid
+                sizing ? 
+                position: (z-index);
+                animation 
+                media query
+                responsiveness principles
+
+            */
+            * {
+                margin:0;
+                padding:0;
+            }
+            /*
+            p{
+                font-size:18px;
+                color:red;
+                background:blue;
+            }
+*/
+            .para{
+                
+            }
+
+            /*p{
+                font-size:var(--p-text);
+            }
+
+            h1{
+                background:orange;
+                color:var(--text-blue);
+                font-size:var(--big-text);
+            }*/
+
+            p{
+                font-size:30px;
+                display:block;
+                /*top right bottom left
+                    kil sens monguela
+                 */
+                background:yellow;
+                border:10px solid green;
+                padding:15px 30px 10px 30px;
+                margin:10px 15px 25px 35px;
+            }
+            div h1{
+                font-size:var(--big-text);
+            }
+            div p{
+                font-size:1.2rem;
+            }
+            div span{
+                font-size:var(--author-text);
+            }
+            .imgb{
+                position:relative;
+                width:100%;
+                border:10px solid blue;
+                height:100%;
+            }
+            img {
+                width:100%;
+            }
+            .textb{
+                font-size:30px;
+                color:red;
+                background:green;
+                position:absolute;
+                left:50%;
+                top:50%;
+                transform:translate(-50%,-50%);
+            }
+            h1{
+                display:inline-block;
+                transform:translateX(150%);
+            }
+            /*
+             
+                regrouper des elements ensembles 
+             */
+        </style>
+    </head>
+
+    <body>
+
+        <h1>CSS</h1>
+        <p>c'est un parapgraphe </p>
+        <div>
+            <span>element</span>
+        </div>
+        <a href="http://google.com">lien</a>
+        <div >
+            <h1>titre de l'article</h1>
+            <p>ceci est le contenu de l'article suivant ........................ hhhhhhhhhhhhh
+            hhhhhhhh mmmmmmm
+            mmmm
+            mmmmmm
+            mmmmmmm
+            mmmmmmmm
+            mmmmmmfffff
+            fffff
+            ffffff
+            ffffffffffff
+            fffffffffffff</p>
+            <span>Victor hugo</span>
+            <div class="imgb">
+                <img src="https://med.stanford.edu/news/all-news/2021/09/cat-fur-color-patterns/_jcr_content/main/image.img.780.high.jpg/cat_by-Kateryna-T-Unsplash.jpg"/>
+
+            <span class="textb">Text</span>
+            </div>
+        </div>
+        <div class="section" style="margin:20px 20px;">
+            <div>
+                <p></p>
+                <span>
+                </span>
+                <img />
+            </div>
+            <div>
+                
+            </div>
+
+        </div>
+    </body>
+</html>
+
