@@ -1,0 +1,21 @@
+#form-1{
+	background:grey;
+	display:flex;
+	flex-direction: column;
+}
+#form-1  div  {
+	display:flex;
+	flex-direction:column;
+}
+#form-1 input {
+	background:orange;
+	color:tomato;
+	border:2px solid violet;
+}
+label {
+	color: indigo;
+}
+
+label:hover {
+	color: green;
+}
