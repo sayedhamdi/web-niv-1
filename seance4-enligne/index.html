@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Animations</title>
+	<style>
+		.products {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+
+		.product {
+			width: 25%;
+			height: 450px;
+			box-shadow: 4px 8px 16px grey;
+		}
+
+		/* User experience */
+		.product:hover {
+			width: 28%;
+			height: 460px;
+		}
+
+		.product img {
+			width: 100%;
+		}
+
+		.product img:hover {
+			width: 110%;
+		}
+
+		button {
+			background: yellow;
+			color: green;
+			font-size: 72px
+		}
+
+		button:hover {
+			background: red;
+		}
+
+		button:active {
+			background: orange;
+		}
+
+		button:focus {
+			background: green;
+			color: blue;
+		}
+
+		a:visited {
+			color: orange;
+		}
+
+		/* changer le style de mes elements 7asb des evenements*/
+		/* pseudo classe*/
+		/* 
+			Events (les evenements)
+
+			(Les clicks)
+			(n3adi souris fou9 elemnts)(Mouse Over)(hover)
+			(Focus)
+			
+		*/
+	</style>
+</head>
+
+<body>
+	<a href="#products">Products</a>
+	<div class="products" id="products">
+		<div class="product">
+			<img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/bd43ce71f589498ab6b1aad6009a0e6e_9366/Superstar_Shoes_White_EG4958_07_standard.jpg"
+				alt="">
+			<br>
+			<button>Buy me !</button>
+		</div>
+		<div class="product">
+			<img src="https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/451f8a2412774782a203aa630115a796_9366/Kaptir_Shoes_Black_EE9513_01_standard.jpg"
+				alt="">
+			<br>
+			<button>Buy me !</button>
+		</div>
+		<div class="product">
+			<img src="https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/09c5ea6df1bd4be6baaaac5e003e7047_9366/Forum_Low_Shoes_White_FY7756_01_standard.jpg"
+				alt="">
+			<br>
+			<button>Buy me !</button>
+		</div>
+	</div>
+
+</body>
+
+</html>

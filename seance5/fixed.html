@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			height: 3000px;
+			background: yellow;
+		}
+
+		.text {
+			margin-top: 1200px;
+			position: relative;
+			z-index: 10000;
+		}
+
+		.chatbox {
+			width: 150px;
+			height: 150px;
+			position: fixed;
+			right: 10px;
+			bottom: 10px;
+			z-index: 9999;
+		}
+
+		.chatbox img {
+			width: 100%;
+		}
+
+		.nav {
+			background: blue;
+
+
+			top: 20px;
+			height: 80px;
+			z-index: 10001;
+		}
+
+		.box {
+			width: 600px;
+			height: 600px;
+			background: grey;
+		}
+
+		.element {
+			width: 100px;
+			height: 100px;
+			background: green;
+			position: sticky;
+			top: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="nav">nav</div>
+	<div class="box">
+		<div class="element"></div>
+	</div>
+	<div class="text">
+		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae porro delectus iusto hic consequuntur
+		fugit quos minus amet, tenetur perferendis dolore veniam quod voluptates molestias vero eius debitis
+		dolorem aliquam.
+	</div>
+	<div class="chatbox">
+		<img src="image.png" alt="">
+	</div>
+</body>
+
+</html>
