@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.element {
+			color: black;
+		}
+
+		/* media query */
+		/* appliqui le code css hedha kif yabda el width entre 300 et 400px */
+		/*@media screen and (max-width:400px) and (min-width:300px) {
+			.element {
+				color: white;
+			}
+
+			body {
+				background: black;
+			}
+		}*/
+		.nav {
+			color: blue;
+			background: green;
+			height: 80px;
+		}
+
+		.nav-mobile {
+			display: none;
+			background: green;
+			height: 80px;
+		}
+
+		/* displaying and removing elements */
+		/* quel est le contenu eli 3andou priority */
+		@media screen and (max-width:400px) {
+			.nav-mobile {
+				display: block;
+			}
+
+			.nav {
+				display: none;
+			}
+		}
+
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		/* i shif layout d'une page */
+		.products {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		.product {
+			min-width: 250px;
+			width: 25%;
+			height: 250px;
+			background: orange;
+			border: 3px solid blue;
+			padding: 20px;
+		}
+
+		@media screen and (max-width:840px) {
+			.product {
+				width: 32%;
+			}
+		}
+
+		@media screen and (max-width:600px) {
+			.product {
+				width: 50%;
+			}
+		}
+
+		@media screen and (max-width:350px) {
+			.product {
+				width: 100%;
+			}
+		}
+
+		.main {
+			display: flex;
+
+		}
+
+		.content {
+			width: 70%;
+			height: 600px;
+			background: black;
+			color: white;
+		}
+
+		.ad {
+			width: 30%;
+			height: 600px;
+			background: red;
+		}
+
+		/* shifiting content position */
+		@media screen and (max-width:600px) {
+			.main {
+				flex-direction: column;
+			}
+
+			.content {
+				width: 100%;
+			}
+
+			.ad {
+				order: -1;
+				width: 100%;
+			}
+		}
+
+		/* for images */
+		/* les images mouhemin baaaaarcha */
+		/* width:100% */
+		/* dima les images fwest des div */
+		/* min width */
+	</style>
+</head>
+
+<body>
+
+	<div class="nav">
+		nav
+		<div class="nav-mobile">
+			nav-mobile
+		</div>
+	</div>
+	<div class="products">
+		<div class="product">
+			Product 1
+		</div>
+		<div class="product">
+			Product 2
+		</div>
+		<div class="product">
+			Product 3
+		</div>
+		<div class="product">
+			Product 4
+		</div>
+	</div>
+	<div class="main">
+		<div class="content">
+			content
+		</div>
+		<div class="ad">
+			ad
+		</div>
+	</div>
+</body>
+
+</html>

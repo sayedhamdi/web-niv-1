@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	div.card {
+		width: 400px;
+		height: 500px;
+		box-shadow: 1px 2px 16px grey;
+		overflow: hidden;
+	}
+
+	img {
+		width: 100%;
+		vertical-align: middle;
+	}
+
+	div.card>.img-parent {
+		width: 100%;
+		height: 75%;
+
+		transition: height 0.8s;
+	}
+
+
+
+	.icon {
+		width: 36px;
+	}
+
+	.profile {
+		display: flex;
+		align-items: center;
+	}
+
+	.profile span {
+		font-size: 13px;
+		margin-left: 8px;
+	}
+
+	.course-info {
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	.course-info,
+	.course-description {
+		padding: 20px 15px;
+	}
+
+	.price {
+		color: #0d0e0e;
+		line-height: 1.14;
+
+		font-size: 25px;
+		font-weight: 300;
+		font-family: Calibre, Arial, sans-serif;
+	}
+
+	.course-description p {
+		font-family: Calibre, Arial, sans-serif;
+		font-size: 16.25px;
+
+	}
+
+	.action {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 20px;
+		align-items: center;
+	}
+
+	.action button {
+		background: blue;
+		color: white;
+		border: none;
+		padding: 10px 20px;
+		font-weight: 900;
+		font-size: 14px;
+	}
+
+	.action a {
+		color: black;
+		text-decoration: none;
+		font-weight: 900;
+	}
+</style>
+
+<body>
+	<div class="card">
+		<div class="img-parent"><img
+				src="https://assets-global.website-files.com/5d816b07d269382588dbcab1/5ee437a89f82304874da8488_the-futur-color-for-creatives-greg-gunn-thumbnail-p-500.jpeg"
+				alt=""></div>
+		<h1>Color for Creatives</h1>
+		<div class="course-info">
+			<span class="profile">
+				<img class="icon"
+					src="https://assets-global.website-files.com/5d816b07d269382588dbcab1/60cd0f167a96e40c43d8fdf6_the-futur-greg-gunn-color-for-creatives-instructor-140-min.jpg"
+					alt="icon" />
+				<span>GREG GRUNN</span>
+			</span>
+			<span class="price">$149</span>
+		</div>
+		<div class="course-description">
+			<p>Go beyond theory and learn color like a pro in this course from Greg Gunn. You'll master how
+				to
+				see, understand, and use color to create fresh, original work.</p>
+			<div class="action">
+				<button>BUY NOW</button>
+				<a href="">Learn More -></a>
+			</div>
+
+		</div>
+	</div>
+</body>
+<script>
+
+	document.querySelector(".card").onmouseenter = () => {
+		document.querySelector(".img-parent").style.height = "30%"
+	}
+	document.querySelector(".card").onmouseleave = () => {
+		document.querySelector(".img-parent").style.height = "80%"
+
+	}
+</script>
+
+</html>
