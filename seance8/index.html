@@ -14,30 +14,30 @@
 <body>
 	<h1>Rich Text editor</h1>
 	<div class="stylers">
-		<button><b>B</b></button>
-		<button><i>i</i></button>
-		<button><u>u</u></button>
-		<select name="" id="">
-			<option>18px</option>
-			<option>19px</option>
-			<option>20px</option>
+		<button onclick="bold()" class="bold"><b>B</b></button>
+		<button onclick="italic()" class="italic"><i>i</i></button>
+		<button class="underline" onclick="underline()"><u>u</u></button>
+		<select name="" id="font-size" onchange="fontSize()">
+			<option value="18px">18px</option>
+			<option value="19px">19px</option>
+			<option value="20px">20px</option>
 			<option>21px</option>
 			<option>22px</option>
 			<option>23px</option>
 			<option>24px</option>
-			<option>34px</option>
+			<option value="34px">34px</option>
 		</select>
-		<select name="" id="">
-			<option value="">Verdana</option>
-			<option value="">Times New Roman</option>
-			<option value="">cursive</option>
-			<option value="">Courrier</option>
-			<option value="">monospace</option>
+		<select name="" onchange="fontFamily()" id="font-family">
+			<option value="verdana">Verdana</option>
+			<option value="Times New Roman">Times New Roman</option>
+			<option value="cursive">cursive</option>
+			<option value="courrier" selected>Courrier</option>
+			<option value="monospace">monospace</option>
 		</select>
-		<input type="color">
+		<input type="color" id="color">
 	</div>
 
-	<textarea></textarea>
+	<textarea onfocus="color()"></textarea>
 </body>
 
 </html>
